@@ -1,1 +1,91 @@
+1. UNDERSTAND THE PROBLEM. Write the down the required data and information. Isolate and remove the unwanted data and information.
+Also assertain/decide/infer the O/P of the problem.
+OUTCOME: The hidden Direct Question in the given problem statement we get. (The given problem may be story kind or real life scenario)
+
+ 
+
+2. FIND THE SOLUTION using mathematically or trial and error or using any specific formula or known technique.
+OUTCOME: You have a clear idea of the solution for the given problem (which we may be implementable)
+
+ 
+
+3. WRITE THE ALOGRITHM: An algorithm is a step by step procedure to solve an ATOMIC problem.
+Each step of the algorithm, must be atomic, descriptive and finite.
+OUTCOME: You have all the instructions/steps/statements of the solution.
+
+ 
+
+4. PSEUDOCODE: Write the FakeCode:
+Advantage of writing the pseudocode is that, it looks like a code written in some language.
+OUTCOME: You have a solution which you can test (Test it using flow chart or some testing tool or de-bugger, Testing means, Tracing the logic)
+
+ 
+
+5. CODE THE SOLUTION: using the language syntax (Python or Java or C++ or C or C# or R)
+OUTCOME: The basic App/Program is ready
+
+1. Check if a character is a digit.
+
+ 
+
+Every character in every language belongs to a specific character set.
+The older but widely used character set is ASCII which has 256 characters and every character is of one byte in size.
+256 characters were insufficient. Hence UNICODE character set was introduced which is used by languages like Java, Python, Modern C++, C# etc. However, the 1st 256 Unicode characters are the ASCII characters. All the characters have respective(unique) values.
+The unicode/ascii values of the digits which are stored as characters in memory have their values starting from 48 to 57. That is the character '0' has value 48, '1' has 49 and '2' has 50 and so on upto '9' with value 57.
+
+
+CH = '2' here 2 is stored in CH as a character
+NUM = 2  here 2 is stored in NUM as a number
+
+ 
+
+Algorithm:
+1. Read a character say CH
+2. check if CH >= 48 and CH <= 57
+Alternatively, we can also check: CH >= '0' and CH <= '9'
+if yes: Print 'given character is a digit'
+else:   Print 'given character is not a digit'
+
+ 
+
+NOTE:
+We cannot use strings as integers in Python. If we try to do so, we get "TypeError" which is runtime error.
+
+ 
+
+ValueError: If we try to convert a data into another type which is not possible. Example, trying to convert 'abc' into int()
+
+ 
+
+Python Solution:
+print('Enter a character to chekc if it is a digit')
+ch = input()
+if ch >= '0' and ch <= '9':
+    print('given character is a digit')
+else:
+    print('given character is Not a digit')
+
+45    6.76  6    36
+121    11.0  11    121
+Algorithm:
+Read the input number N
+Find Root of N and store it a variable ROOT
+Now find the Floor of ROOT and store it in INT_ROOT
+Now check if INT_ROOT * INT_ROOT is equal to N
+If yes: print N is P S
+else  : print N is not a P S
+
+ 
+
+floor() It removes/truncates the decimal part if any.
+
+ 
+
+round() If the decimal part is 0.5 or more then next integer number is returned, else the decimal part is truncated.
+
+ 
+
+ciel() Returns the next integer number if the decimal part of the number is anything other than .0
+So ciel(7.000001) is 8.
+
 
