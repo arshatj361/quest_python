@@ -1,4 +1,4 @@
-def varArgFunction(*arguments): # receives the data into a tuple. However, if it has objects like list or dictionary, then they will received by reference only.
+varArgFunction(*arguments): # receives the data into a tuple. However, if it has objects like list or dictionary, then they will received by reference only.
     print(arguments)
     arguments[0].remove(10)
  
@@ -15,4 +15,3 @@ numbers2 = list(map(int, input().split()))
 print(numbers2)
 myFunction(numbers2)
 print(numbers2)
- 
