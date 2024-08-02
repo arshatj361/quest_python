@@ -1,4 +1,5 @@
-varArgFunction(*arguments): # receives the data into a tuple. However, if it has objects like list or dictionary, then they will received by reference only.
+
+def varArgFunction(*arguments): # receives the data into a tuple. However, if it has objects like list or dictionary, then they will received by reference only.
     print(arguments)
     arguments[0].remove(10)
  
