@@ -24,5 +24,5 @@ def varArgFunction2(*arguments):
  
 def varArgFunction2(*arguments):
     for element in arguments: # for each loop. It accesses all elements of the tuple one by one
-        print(arguments[i])
+        print(elements)
 '''
