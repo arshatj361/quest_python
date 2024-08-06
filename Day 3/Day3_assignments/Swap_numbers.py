@@ -1,5 +1,5 @@
 #Accept N numbers from the user and swap the consecutive element in the list
-
+import pdb; pdb.set_trace()
 def swap_consecutive_elements(list):
     for i in range(0, len(list) - 1, 2):
         list[i], list[i + 1] = list[i + 1], list[i]
