@@ -12,7 +12,7 @@ preference_list = [int(item) for item in split_inputs]
 
 if branch == "1":  # ECE
     if Arts > 90 and Literature > 90 and Maths > 35:
-        if 1 in preference_list and 3 in preference_list: #1.arts 3. literature 
+        if 1 in preference_list or 3 in preference_list: #1.arts 3. literature 
             print("You are eligible for Marketing")
     else:
         print("You are not eligible for Marketing")
@@ -30,7 +30,7 @@ elif branch == "2":  # BCOM
 
 elif branch == "3":  # MECH
     if Maths > 90 and Literature > 90 and Arts > 35:
-        if 2 in preference_list and 3 in preference_list: #2= maths,3=Literature
+        if 2 in preference_list or 3 in preference_list: #2= maths,3=Literature
             print("You are eligible for Sales")
     else:
         print("You are not eligible for Sales")
