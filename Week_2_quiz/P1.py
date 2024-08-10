@@ -40,8 +40,8 @@ def main():
     carbs=int(input("Enter the amount of carbs in grams"))
     fat=int(input("Enter the amount of fat in grams"))
     protein=int(input("Enter the amount of protein in grams"))
-    is_peelable = input("Is it peelable? (yes/no): ").strip().lower()
-    is_boneless = input("Is it boneless? (yes/no): ").strip().lower()
+    is_peelable = input("Is it peelable? (yes/no): ").lower()
+    is_boneless = input("Is it boneless? (yes/no): ").lower()
     if is_peelable == 'yes':
         item = vegetarian(carbs, fat, protein, is_peelable == 'yes')
     elif is_boneless == 'yes':
